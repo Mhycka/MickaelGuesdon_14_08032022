@@ -5,7 +5,7 @@ import {
     Routes,
     Route
   } from "react-router-dom";
-import EmployeeCreation from './Pages/EmployeeCreation';
+import EmployeeCreation from './Pages/EmployeeCreation.jsx';
 import EmployeeList from './Pages/EmployeeList';
 
 function App() {
