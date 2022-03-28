@@ -1,31 +1,25 @@
-import { useState } from 'react';
-import './App.scss';
-import {
-    HashRouter as Router,
-    Routes,
-    Route
-  } from "react-router-dom";
-import EmployeeCreation from './Pages/EmployeeCreation';
-import EmployeeList from './Pages/EmployeeList';
-
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-
-  const [employees,setEmployees]=useState([])
-
-  //Will add the employee to an array, to avoid erase the  previous ones
-  const createEmployee = (newEmployee) => {
-    setEmployees([...employees, newEmployee]);
-  };
-
   return (
-    <Router>
-      <Routes>
-        <Route exact path='/' element={<EmployeeCreation handleSubmit={createEmployee} />}/>
-        <Route  path='/employee-list' element={<EmployeeList setEmployees={setEmployees}employees={employees} />}/>
-      </Routes>
-    </Router>
-  )
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
