@@ -1,0 +1,86 @@
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:black;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right:10px;
+    width:100%;
+  }
+  
+
+form {
+    width:40%;
+    min-width: 375px;
+    position:relative;
+}
+
+input {
+    width:100%;
+    border:1px solid black;
+    border-radius:5px;
+}
+
+.address {
+    margin:30px 0;
+    border-radius: 5px;
+    border: 2px solid #00353F;
+    color:#00353F
+}
+
+.icon-calendar {
+    color:black;
+    height:20px;
+    width:20px;
+    cursor:pointer;
+}
+
+.arrow-icon {
+    height:20px;
+    width:20px;
+    transition:all 100ms ease-in-out;
+    transform:rotate(0deg)
+}
+
+.arrow-icon.rotate {
+    transform:rotate(180deg)
+}
+
+.date-of-birth, .start-date  {
+    margin:0 auto;
+    width:100%;
+    position:absolute;
+    z-index:99;
+    animation: apparition 400ms;
+    animation-fill-mode:forwards;
+    transform-origin: 100% 0%;  
+}
+
+
+.react-calendar {
+    border-radius: 5px;
+    box-shadow: 2px 2px lightslategrey;
+    min-width: 375px;
+    width:100%;
+}
+
+
+.save-button {
+    border-radius: 5px;
+    background-color: #00353F;
+    width:100%;
+    padding:5px 10px;
+    margin-top:30px;
+    border:1px solid #00353F;
+    font-size: 16px;
+    font-weight: bold;
+    color:white
+
+}
+
+@keyframes apparition {
+    0% {opacity:0;transform: scale(0);transform:translateY(-21px) }
+    100% {opacity:1;transform: scale(1.0);transform:translateY(0px)}
+}
