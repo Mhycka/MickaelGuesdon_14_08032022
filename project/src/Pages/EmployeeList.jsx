@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../Components/Header';
-// import DataTables from 'hrnet-datatables'
+// import DataTables from 'plugin-datatable'
 import dataUser from '../Data/dataUser';
 import labelNames from '../Data/labelNames'
 

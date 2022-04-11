@@ -1,0 +1,30 @@
+.dataTable-footer {
+    padding:0 20px;
+    height:40px;
+    border-radius:0 0 10px 10px ;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6E8511;
+    color:white;
+    padding:0 20px;
+    
+    .dataTables-info{
+        margin-left:25px;
+    }
+
+    .dataTable-paginate{
+        display:flex;
+        align-items:center;
+    
+        .disable {
+            color:rgba(0,0,0,0.2) ;
+            cursor:default;
+            
+            :hover {
+                font-size:20px !important;
+                text-shadow: none !important;
+            }
+        }
+    }
+}
