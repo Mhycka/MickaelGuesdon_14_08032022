@@ -1,0 +1,17 @@
+.dataTable-td {
+    max-width:150px;
+    width:150px;
+    padding:0 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.dataTable-td {
+    height:40px;
+}
+
+.dataTable-th{
+    text-align: justify;
+    position:relative;
+}

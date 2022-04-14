@@ -1,0 +1,12 @@
+.dataTables-top {
+    padding:0 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:75px;
+    margin-bottom:10px;
+
+    .datatable-search-input, .datatable-select {
+        margin-left:5px;
+    }
+}

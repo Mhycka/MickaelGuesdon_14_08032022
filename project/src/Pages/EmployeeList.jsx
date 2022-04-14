@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../Components/Header';
-// import DataTables from 'plugin-datatable'
+import DataTables from '../Addon/App';
 import dataUser from '../Data/dataUser';
 import labelNames from '../Data/labelNames'
 
@@ -22,8 +22,8 @@ function EmployeeList({employees,setEmployees}) {
         <React.Fragment>
             <Header />
             <div className="employee-list-container">
-                {/* <DataTables key={value}label={labelNames} data={employees} /> */}
-                <button onClick={handleClick} className="fake-button">Fake Data for demonstration</button>
+                <DataTables key={value}label={labelNames} data={employees} />
+                <button onClick={handleClick} className="fake-button">click here for demonstration</button>
             </div>  
         </React.Fragment>  
     )
