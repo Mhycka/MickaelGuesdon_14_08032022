@@ -34,8 +34,8 @@ function TdElement({id,typeData}){
 
     return(
         <React.Fragment>
-            <td style={{cursor:cursor}} onMouseEnter={(e)=>handleMouseEnter(e)} onMouseLeave={(e)=>handleMouseLeave(e)} onClick={(e)=>handleClick(e)} id={id} className="dataTable-td">{typeData}
-            {openOverflow && <span style={{left:mouseX, top:mouseY}} className="div-hover">{typeData}</span>}
+            <td style={{cursor:cursor}} onMouseEnter={(e)=>handleMouseEnter(e)} onMouseLeave={(e)=>handleMouseLeave(e)} onClick={(e)=>handleClick(e)} id={id} className="dataTableTd">{typeData}
+            {openOverflow && <span style={{left:mouseX, top:mouseY}} className="hoverTd">{typeData}</span>}
             </td>
         </React.Fragment>
     )

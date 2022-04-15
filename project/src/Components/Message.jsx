@@ -6,7 +6,7 @@
 function Message({setCreated}) {
 
     return (
-        <div className="blocker" onClick={()=>setCreated(false)}>
+        <div className="notif" onClick={()=>setCreated(false)}>
             <div id="confirmation" className="modal">Employee Created!
                 <div className='close-modal' ></div>
             </div>

@@ -84,10 +84,10 @@ function Form({handleSubmit}) {
             
             <form onSubmit={handleSubmitForm} id="create-employee">
                 <label htmlFor="first-name">First Name</label>
-                <input required pattern="[A-za-z].{1,}" title="2 characters minimum" type="text" id="first-name" name='firstName'   value={data.firstName} onChange={handleInputChange}/>
+                <input required pattern="[A-za-z].{1,}" title="2 characters minimum" type="text" name='firstName'   value={data.firstName} onChange={handleInputChange}/>
 
                 <label htmlFor="last-name">Last Name</label>
-                <input required type="text" id="last-name" name='lastName' pattern="[A-Za-z].{1,}" title="2 characters minimum" value={data.lastName} onChange={handleInputChange} />
+                <input required type="text"  name='lastName' pattern="[A-Za-z].{1,}" title="2 characters minimum" value={data.lastName} onChange={handleInputChange} />
 
                 <Picker 
                 text="Date of Birth"
@@ -115,10 +115,10 @@ function Form({handleSubmit}) {
                     <legend>Address</legend>
 
                     <label htmlFor="street">Street</label>
-                    <input required  id="street" type="text" name='street'  title="This field is required" value={data.street} onChange={handleInputChange}/>
+                    <input required  type="text" name='street'  title="This field is required" value={data.street} onChange={handleInputChange}/>
 
                     <label htmlFor="city">City</label>
-                    <input required   id="city" type="text"  name='city' pattern="[A-za-z].{1,}" title="2 characters minimum" value={data.city} onChange={handleInputChange}/>
+                    <input required type="text"  name='city' pattern="[A-za-z].{1,}" title="2 characters minimum" value={data.city} onChange={handleInputChange}/>
                     
                     <Dropdown
                     selectValue={StatesData[0]}
@@ -130,7 +130,7 @@ function Form({handleSubmit}) {
                     handleOpen={handleElementsOpening} />
 
                     <label htmlFor="zip-code">Zip Code</label>
-                    <input required id="zip-code" type="text" name='zipCode'pattern="[0-9].{1,}" title="Must be a number" value={data.zipCode} onChange={handleInputChange} />
+                    <input required type="text" name='zipCode'pattern="[0-9].{1,}" title="Must be a number" value={data.zipCode} onChange={handleInputChange} />
                 </fieldset>
                 
                 <Dropdown
@@ -142,7 +142,7 @@ function Form({handleSubmit}) {
                 isOpen={openedElts.department}
                 handleOpen={handleElementsOpening}
                     />
-                <button className="save-button">Save</button>
+                <button className="btnSave">Save</button>
             </form>
             {created=== true ? <Message setCreated={setCreated}/>:''}
         </React.Fragment>

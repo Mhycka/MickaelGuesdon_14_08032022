@@ -30,21 +30,21 @@ input {
     color:#00353F
 }
 
-.icon-calendar {
+.iconCalendar {
     color:black;
     height:20px;
     width:20px;
     cursor:pointer;
 }
 
-.arrow-icon {
+.iconArrow {
     height:20px;
     width:20px;
     transition:all 100ms ease-in-out;
     transform:rotate(0deg)
 }
 
-.arrow-icon.rotate {
+.iconArrow.rotate {
     transform:rotate(180deg)
 }
 
@@ -67,7 +67,7 @@ input {
 }
 
 
-.save-button {
+.btnSave {
     border-radius: 5px;
     background-color: #6F8614;
     width:100%;

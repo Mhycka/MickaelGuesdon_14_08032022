@@ -11,8 +11,8 @@ function Header(){
   const [arrowClicked,setArrowClicked]=useState(false)
   
   return(
-      <thead className="dataTable-thead">
-          <tr className="dataTable-head-tr">
+      <thead className="dataTableThead">
+          <tr className="dataTableHeadTr">
               {Object.entries(value.label[0]).map((name,index)=>
                 <TableHeadTh 
                   arrowClicked={arrowClicked} 

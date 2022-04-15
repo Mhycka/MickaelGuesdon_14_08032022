@@ -77,8 +77,8 @@ function TableHeadTh({arrowClicked,setArrowClicked,dataType,thName,id}){
     }
 
     return(
-        <th id={id} className="dataTable-th">{thName} 
-            <div className="sort-icon">
+        <th id={id} className="dataTableTh">{thName} 
+            <div className="iconSort">
                 <SortUp  onClick={handleClickUp} className={upIsClicked ?"dataTable-up clicked":"dataTable-up"} />
                <SortDown onClick={handleClickDown} className={downIsClicked ? "dataTable-down clicked":"dataTable-down"} />
             </div>

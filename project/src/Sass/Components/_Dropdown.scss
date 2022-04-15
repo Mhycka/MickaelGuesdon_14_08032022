@@ -14,17 +14,17 @@
     cursor: pointer;
   }
 
-.dropdown-wrapper {
+.dropWrapper {
     position: relative;
     margin-bottom: 20px;
   }
 
-.dropdown-label {
+.dropLabel {
     display: block;
     margin-bottom: 10px;
   }
 
-.dropdown-options {
+.dropOptions {
     border: 1px solid #00353F;
     border-radius: 0 0 5px 5px;
     border-top: none;
@@ -39,7 +39,7 @@
     
   }
 
-.dropdown-options.active {
+.dropOptions.active {
     display: block;
     position:absolute;
     overflow: scroll;

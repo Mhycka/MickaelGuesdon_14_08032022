@@ -23,8 +23,8 @@ const Dropdown = ({
 
   const [eltText,setEltText]=useState(selectValue.text)
   return (
-    <div className="dropdown-wrapper">
-      <label htmlFor={`${selectName}-btn`} className="dropdown-label">
+    <div className="dropWrapper">
+      <label htmlFor={`${selectName}-btn`} className="dropLabel">
         {selectLabel}
       </label>
       <span
@@ -33,10 +33,10 @@ const Dropdown = ({
         onClick={() => handleOpen(selectName)}
       >
         <span>{eltText}</span>
-        {isOpen ? <img  alt={"Arrow icon"} src={arrowIcon} className="arrow-icon"></img> :<img alt={"Arrow icon"} src={arrowIcon}  className="arrow-icon rotate"></img> } 
+        {isOpen ? <img  alt={"Arrow icon"} src={arrowIcon} className="iconArrow"></img> :<img alt={"Arrow icon"} src={arrowIcon}  className="iconArrow rotate"></img> } 
       </span>
-      <div className={isOpen ? "dropdown-options active" : "dropdown-options"}>
-        <ul className="dropdown-list" id={`${selectName}-menu`}>
+      <div className={isOpen ? "dropOptions active" : "dropOptions"}>
+        <ul id={`${selectName}-menu`}>
           {selectList.map((elt) => (
             <li
               key={elt.value}

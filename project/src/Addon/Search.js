@@ -28,7 +28,7 @@ function Search(){
 
     return (
         <label>Search: 
-            <input type="search" className="datatable-search-input" placeholder="" onChange={handleChange} />
+            <input type="search" className="datatableSearchInput" placeholder="" onChange={handleChange} />
         </label>
     )
 }

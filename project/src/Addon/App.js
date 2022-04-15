@@ -24,20 +24,20 @@ function DataTables({label,data}) {
 
     return(
         <UserContext.Provider value={{label:label,employees:employees,setEmployees:setEmployees,showEntries:showEntries,setShowEntries:setShowEntries,indexPages:indexPages,setIndexPages:setIndexPages,sliceBegin:sliceBegin,sliceEnd:sliceEnd}}>
-            <div className="dataTables-wrapper">
-                <div className="dataTables-top">
+            <div className="dataTablesWrapper">
+                <div className="dataTablesTop">
                     <ShowEntries />
                     <DataTableSearch />
                 </div>
-                    <table className="dataTable-table">
+                    <table className="dataTableBody">
                        <DataTableHead />
                         {employees.length>0 ?(
-                            <tbody className="dataTable-body">
+                            <tbody>
                                 {employees.slice(sliceBegin,sliceEnd).map((employee,index)=>
                                     <RowTr key={index+employee.lastName} data={employee} />
                                 )}
                            </tbody>):(
-                           <tbody><tr className="datatable-blank"><th  colSpan="9">the database is empty !</th></tr></tbody>)}
+                           <tbody><tr className="datatableEmpty"><th  colSpan="9">the database is empty !</th></tr></tbody>)}
                     </table>
                     <DataTableFooter/>
             </div>

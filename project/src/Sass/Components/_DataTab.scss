@@ -1,46 +1,37 @@
 .employee-list-container{
     padding:0 100px;
-  }
-
-.dataTable-thead , .dataTable-footer {
-  background-color: #00353F;
-}
-
-.dataTable-th, .dataTable-td{
-    width:150px;
-    max-width:150px;
 }
 
 table {
   box-shadow: 5px 45px 20px lightgrey;
 }
 
-.dataTables-top label {
+.dataTablesTop label {
   width: min-content;
 }
 
-.datatable-search-input {
+.datatableSearchInput {
   width:200px;
 }
 
-.datatable-select {
+.datatableNmb {
   margin-right:5px;
 }
 
-.page-index:hover {
+.pageIndex:hover {
   font-weight:400 !important;
   text-shadow: 1px 1px 2px gray;
 }
 
-.dataTable-th{
+.dataTableTh{
   text-align: unset !important;
 
 }
 
-.sort-icon {
+.iconSort {
   right:20px !important;
 }
 
-.datatable-select{
+.datatableNmb{
   border-radius:5px 5px 0 0 !important;
 }

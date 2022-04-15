@@ -23,7 +23,7 @@ function EmployeeList({employees,setEmployees}) {
             <Header />
             <div className="employee-list-container">
                 <DataTables key={value}label={labelNames} data={employees} />
-                <button onClick={handleClick} className="fake-button">click here for demonstration</button>
+                <button onClick={handleClick} className="btnDataMocked">click here for demonstration</button>
             </div>  
         </React.Fragment>  
     )

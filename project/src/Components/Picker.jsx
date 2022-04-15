@@ -30,9 +30,9 @@ function Picker({text,date,handleInputChange,handleCustomInputChange,label,name,
     }
 
     return(
-        <div className="calendar-wrapper" >
+        <div>
             <label  htmlFor={label}>{text}
-                <img  alt={'calendar icon'}src={icon} className="icon-calendar" onClick={(e)=>(handleClick(e))}></img>
+                <img  alt={'calendar icon'}src={icon} className="iconCalendar" onClick={(e)=>(handleClick(e))}></img>
             </label>
             <input required id={label} type="text" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" title="The date must be dd/mm/yyyy" name={name} value={date} onChange={handleInputChange}
                />  

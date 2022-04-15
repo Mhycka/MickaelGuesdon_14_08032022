@@ -15,7 +15,7 @@ function Entries(){
 
     return(
         <label>Show 
-            <select className="datatable-select" name="employee-table_length" onChange={(event)=>handleChange(event)} value={value.showEntries}>
+            <select className="datatableNmb" name="employee-table_length" onChange={(event)=>handleChange(event)} value={value.showEntries}>
                 <option value="10">10</option>
                 <option value="25">25</option>
                 <option value="50">50</option>
